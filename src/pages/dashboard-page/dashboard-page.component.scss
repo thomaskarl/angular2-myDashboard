@@ -1,0 +1,50 @@
+$space: 20px;
+$dark: #252525;
+$light: #e9e9e9;
+
+.card-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+	.card {
+		border: 1px solid $light;
+		padding: $space;
+		margin: $space;
+		transform: rotateZ(3deg);
+		box-shadow: $space/2 $space/2 $space/4 0 rgba(0, 0, 0, 0.75);
+		background-image: linear-gradient(#21202f, peru);
+		transition: all .1s ease-in-out;
+		color: $light;
+
+		img {
+			max-width: 150px;
+		}
+
+		&:hover {
+			z-index: 1;
+			animation: changeIndex .1s linear;
+			animation-iteration-count: 1;
+			transform: scale(1.1);
+		}
+
+		@keyframes changeIndex {
+			from {
+				z-index: 0;
+			}
+			to {
+				z-index: 2;
+			}
+		}
+	}
+}
+
+hr {
+	height: 10px;
+	border: none;
+	box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
+	background-image: linear-gradient(#21202f, peru);
+}
+

@@ -1,0 +1,46 @@
+<h1>Weather For Norway Oslo<br /></h1>
+<div class="[ card-container ]">
+      <div class="[ card ]" *ngFor="let weather of weatherDetail">
+            Sky Conditions: {{ weather.weather_state_name }}<br/>
+            Min Tempreture: {{ weather.min_temp }}<br/>
+            Max Tempreture: {{ weather.max_temp }}<br/>
+            Actual Tempreture: {{ weather.the_temp }}<br/>
+            Date Created: {{ weather.created }}<br/>
+            Humidity: {{ weather.humidity }}<br/>
+      </div>
+</div>
+
+<hr>
+
+<h1>Crypto top of the world<br /></h1>
+<div class="[ card-container ]">
+      <div class="[ card ]" *ngFor="let dog of dogDetail">
+            ID: {{ dog.id }}<br/>
+            Symbol: {{ dog.symbol }}<br/>
+            Name: {{ dog.name }}<br/>
+            Price USD: {{ dog.price_usd }}<br/>
+            Price BTC: {{ dog.price_btc }}<br/>
+      </div>
+</div>
+
+<hr>
+
+<h1>Three cards of random<br /></h1>
+<div class="[ card-container ]">
+      <div class="[ card ]" *ngFor="let card of cardDetail">
+            Value: {{ card.value }}<br/>
+            Suite: {{ card.suit }}<br/>
+            Code: {{ card.code }}<br/>
+            <img src="{{ card.image }}" alt="">
+      </div>
+</div>
+
+<hr>
+
+<h1>List of music<br /></h1>
+<div class="[ card-container ]">
+      <div class="[ card ]" *ngFor="let music of musicDetail">
+            Name: {{ music.name }}<br/>
+            <img src="{{ music.img }}" alt="">
+      </div>
+</div>
